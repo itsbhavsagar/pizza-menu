@@ -49,10 +49,11 @@ const pizzaData = [
 function App() {
   return (
     <div>
-      <h1>Hello React!</h1>
+      <Header />
       <Pizza />
       <Pizza />
       <Pizza />
+      <Footer />
     </div>
   );
 }
@@ -65,6 +66,16 @@ function Pizza() {
       <p>Tomato, mozarella, spinach, and ricotta cheese</p>
     </div>
   );
+}
+
+function Header() {
+  return <h1>Fast React Pizza Co.</h1>;
+}
+
+function Menu() {}
+
+function Footer() {
+  return React.createElement("footer", null, "We're currently Open!");
 }
 
 // React syntax for v18
